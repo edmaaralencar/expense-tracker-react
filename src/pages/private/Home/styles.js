@@ -33,6 +33,12 @@ export const BottomSide = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 575px) {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
     a {
       color: ${({ theme }) => theme.colors.white};
       font-size: 2rem;

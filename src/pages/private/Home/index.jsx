@@ -17,8 +17,6 @@ const Home = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      // getTransactions()
-      // getSavings()
       await Promise.all([getTransactions(), getSavings()])
     }
 
