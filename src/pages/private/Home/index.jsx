@@ -53,7 +53,7 @@ const Home = () => {
           </div>
           <Table
             transactions={transactions.slice(
-              Math.max(transactions.length - 5, 1)
+              Math.max(transactions.length - 5, 0)
             )}
           />
         </div>
