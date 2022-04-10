@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FiMenu, FiChevronDown } from 'react-icons/fi'
 
-import { Container, HeaderLogo, HeaderPerfil } from './styles'
+import { Container, HeaderLogo, HeaderPerfil, HeaderImg } from './styles'
 
 import logoImg from '../../assets/logo.svg'
 import profileImg from '../../assets/profile.png'
@@ -31,6 +31,8 @@ const Header = () => {
         <button onClick={() => handleDropdown()}>
           <FiChevronDown size={30} color="#FFFFFF" />
         </button>
+
+        <HeaderImg></HeaderImg>
 
         {openDropdown && (
           <button onClick={() => logoutUser()} className="dropdown">

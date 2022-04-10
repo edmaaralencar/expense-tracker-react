@@ -45,7 +45,7 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const authorizationFetch = axios.create({
-    baseURL: 'http://localhost:5000/api'
+    baseURL: 'https://expense-tracker-back-node.herokuapp.com/api'
   })
 
   authorizationFetch.interceptors.request.use(

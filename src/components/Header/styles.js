@@ -23,6 +23,13 @@ export const Container = styled.header`
 export const HeaderLogo = styled.div`
   display: flex;
   gap: 1.5rem;
+
+  img {
+    @media (max-width: 490px) {
+      display: none;
+    }
+  }
+
   .menu {
     cursor: pointer;
     @media screen and (min-width: 800px) {
@@ -60,3 +67,5 @@ export const HeaderPerfil = styled.div`
     padding: 1rem;
   }
 `
+
+export const HeaderImg = styled.img``
