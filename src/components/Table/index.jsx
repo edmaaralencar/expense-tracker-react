@@ -17,6 +17,7 @@ const Table = ({ transactions }) => {
         <S.TableItem key={transaction._id}>
           {formatIconCategory(transaction.category)}
           <span className="table-item-category">{transaction.category}</span>
+          <span>{new Date(transaction.createdAt).toLocaleString().split(', ')[0]}</span>
           <span>{transaction.title}</span>
           {transaction.type === 'deposit' ? (
             <span>{formatCurrency(transaction.amount)}</span>

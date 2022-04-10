@@ -12,7 +12,7 @@ export const TableItem = styled.div`
   border-bottom: 1px solid #c4c4c4;
   display: grid;
   gap: 2.4rem;
-  grid-template-columns: auto 1fr 2fr 1fr auto;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
   align-items: center;
   margin-bottom: 1.7rem;
   color: #ffffff;
