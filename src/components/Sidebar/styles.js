@@ -3,13 +3,14 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 export const Container = styled.div`
-  height: calc(100vh - 9rem);
+  height: calc(100vh - 8rem);
   width: 23rem;
   background-color: #171717;
   position: fixed;
   transition: all 0.3s ease 0s;
   border: 2px solid #313131;
   border-top: none;
+  z-index: 10;
 
   @media (max-width: 800px) {
     left: -100%;
