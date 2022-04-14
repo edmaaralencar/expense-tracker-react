@@ -48,6 +48,7 @@ export const Container = styled.section`
       border: 0;
       background-color: #12a454;
       width: 100%;
+      order: 6;
     }
 
     a {
@@ -60,6 +61,10 @@ export const Container = styled.section`
       background-color: #c82333;
       text-decoration: none;
       width: 100%;
+
+      @media (max-width: 1000px) {
+        order: 6;
+      }
     }
   }
 `
