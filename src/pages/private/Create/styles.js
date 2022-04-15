@@ -79,6 +79,12 @@ export const TypeButtonContainer = styled.div`
     grid-column: span 2;
     width: 100%;
   }
+
+  @media (max-width: 350px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
 `
 
 const colors = {

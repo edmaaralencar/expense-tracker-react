@@ -33,6 +33,10 @@ export const Container = styled.section`
       background-color: ${props => props.theme.colors.white};
       color: #000000;
       text-decoration: none;
+
+      @media (max-width: 620px) {
+        font-size: 1.8rem;
+      }
     }
   }
 

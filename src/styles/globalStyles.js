@@ -40,6 +40,10 @@ export const GlobalStyle = createGlobalStyle`
         width: 100vw;
         padding: 5rem;
     }
+
+    @media (max-width: 620px) {
+        padding: 3rem;
+    }
   }
 
   button {
@@ -54,6 +58,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 4.8rem;
     color: ${({ theme }) => theme.colors.white};
     font-weight: 600;
+
+    @media (max-width: 620px) {
+      font-size: 3.2rem;
+    }
   }
 
   h2 {

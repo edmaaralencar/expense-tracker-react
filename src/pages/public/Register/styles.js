@@ -9,6 +9,10 @@ export const Container = styled.div`
 
   border-radius: 0.8rem;
 
+  @media (max-width: 620px) {
+    background-color: ${props => props.theme.colors.contentColor};
+  }
+
   .input-container {
     display: flex;
     flex-direction: column;
@@ -25,6 +29,10 @@ export const Container = styled.div`
     border: 0;
     border-radius: 0.5rem;
     margin-top: 4rem;
+
+    @media (max-width: 550px) {
+      font-size: 1.8rem;
+    }
   }
 
   a {
@@ -34,6 +42,10 @@ export const Container = styled.div`
     color: #dadada;
     font-size: 2.4rem;
     text-decoration: none;
+
+    @media (max-width: 550px) {
+      font-size: 1.8rem;
+    }
 
     span {
       color: ${props => props.theme.colors.green};
@@ -49,6 +61,10 @@ export const InputBox = styled.div`
   label {
     color: #dadada;
     font-size: 2.4rem;
+
+    @media (max-width: 550px) {
+      font-size: 1.8rem;
+    }
   }
 
   input {
@@ -63,6 +79,10 @@ export const InputBox = styled.div`
 
     &::placeholder {
       color: #a5a5a5;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 1.4rem;
     }
   }
 `

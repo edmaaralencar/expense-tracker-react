@@ -10,6 +10,7 @@ export const Container = styled.header`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 5;
 
   background-color: ${props => props.theme.colors.contentColor};
 
@@ -43,12 +44,20 @@ export const HeaderPerfil = styled.div`
   align-items: center;
   gap: 2rem;
 
+  @media (max-width: 380px) {
+    gap: 1rem;
+  }
+
   position: relative;
 
   p {
     color: #ededed;
     font-size: 2rem;
     font-weight: 500;
+
+    @media (max-width: 380px) {
+      display: none;
+    }
   }
 
   button {

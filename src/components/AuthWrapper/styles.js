@@ -13,7 +13,7 @@ export const Container = styled.section`
   }
 
   @media (max-width: 570px) {
-    padding: 3rem;
+    padding: 1rem 0;
   }
 
   h1 {
@@ -21,5 +21,9 @@ export const Container = styled.section`
     color: #dedede;
     font-weight: 500;
     text-align: center;
+
+    @media (max-width: 550px) {
+      font-size: 3.2rem;
+    }
   }
 `
